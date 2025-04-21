@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunt Realty Listings</title>
+  <style>
+    body {
+      background-color: #D8D5D5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0056b3;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .listings {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .listing {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .listing img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .listing a {
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .listing {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Listings</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Featured Listings</h2>
+    <div class="listings">
+      <div class="listing">
+        <img src="https://img.kvcore.com/cdn-cgi/image/fit=scale-down,format=auto,width=825/https://d36xftgacqn2p.cloudfront.net/listingphotos88/25007938-1.jpg?v=1745173457" alt="154 Louisiana Avenue">
+        <a href="https://ericahunt.bluegrasshomegroup.com/details.php?mls=88&mlsid=25007938">
+          154 Louisiana Avenue, Lexington, KY<br>$1,395,000
+        </a>
+      </div>
+
+      <div class="listing">
+        <img src="https://img.kvcore.com/cdn-cgi/image/fit=scale-down,format=auto,width=825/https://d36xftgacqn2p.cloudfront.net/listingphotos88/25007935-20.jpg?v=1745163931" alt="907 G V Hale Avenue">
+        <a href="https://ericahunt.bluegrasshomegroup.com/details.php?mls=88&mlsid=25007935">
+          907 G V Hale Avenue, Russell Springs, KY<br>$569,900
+        </a>
+      </div>
+
+      <div class="listing">
+        <img src="https://img.kvcore.com/cdn-cgi/image/fit=scale-down,format=auto,width=825/https://d36xftgacqn2p.cloudfront.net/listingphotos94/1684842-57.jpg?v=1745152658" alt="5515 Hempstead Rd">
+        <a href="https://ericahunt.bluegrasshomegroup.com/details.php?mls=94&mlsid=1684842">
+          5515 Hempstead Rd, Louisville, KY<br>$658,000
+        </a>
+      </div>
+
+      <div class="listing">
+        <img src="https://img.kvcore.com/cdn-cgi/image/fit=scale-down,format=auto,width=825/https://d36xftgacqn2p.cloudfront.net/listingphotos88/25007917-41.jpg?v=1745089973" alt="4168 Lucas Lane">
+        <a href="https://ericahunt.bluegrasshomegroup.com/details.php?mls=88&mlsid=25007917">
+          4168 Lucas Lane, Frankfort, KY<br>$499,900
+        </a>
+      </div>
+
+      <div class="listing">
+        <img src="https://images.vexels.com/media/users/3/157214/isolated/preview/a4830aaca7c432fbab084a9adf31e067-flat-house-icon.png" alt="All Other Listings">
+        <a href="https://ericahunt.bluegrasshomegroup.com/details.php?mls=88&mlsid=25007917">
+          All Other Listings
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HuntRealty. All rights reserved.</p>
+  </footer>
+
+  <script src="hunt.js"></script>
+</body>
+</html>
